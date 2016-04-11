@@ -22,24 +22,28 @@
     AlertDemoViewController *vc = [[AlertDemoViewController alloc]init];
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-    
     if (([UIApplication sharedApplication].statusBarOrientation != UIInterfaceOrientationPortrait && [[UIDevice currentDevice].systemVersion floatValue] < 8)) {
         [navi.navigationBar setBarTintColor:[UIColor clearColor]];
     }else{
         [navi.navigationBar setTintColor:[UIColor clearColor]];
     }
+    
     self.rootNavi = navi;
     self.window.rootViewController = navi;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
+    // 启动广告
     [self startAd];
+    
+    //倒计时方法
+    [self startTime];
     
     
     
     return YES;
 }
+
 
 // 启动广告
 - (void)startAd {
@@ -64,8 +68,7 @@
     self.timeButton.layer.masksToBounds = YES;
     [self.adImageView addSubview:self.timeButton];
     
-    //倒计时方法
-    [self startTime];
+    
     
     [self performSelector:@selector(removeAdImageView) withObject:nil afterDelay:3];
 }

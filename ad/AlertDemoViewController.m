@@ -9,7 +9,7 @@
 #import "AlertDemoViewController.h"
 
 @interface AlertDemoViewController ()
-@property(nonatomic,strong) UIWebView *webPdf;
+@property(nonatomic,strong) UIWebView *webBlog;
 @end
 
 @implementation AlertDemoViewController
@@ -18,15 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"江湖";
-    self.webPdf = [[UIWebView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.webBlog = [[UIWebView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     NSString * path = @"http://www.policx.com";
-
+    
     NSURL *pdfURL = [NSURL URLWithString:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:pdfURL];
     //设置缩放
-    [self.webPdf setScalesPageToFit:YES];
-    [self.webPdf loadRequest:request];
-    [self.view addSubview:_webPdf];
+    [self.webBlog setScalesPageToFit:YES];
+    [self.webBlog loadRequest:request];
+    [self.view addSubview:_webBlog];
 }
 
 - (void)didReceiveMemoryWarning {

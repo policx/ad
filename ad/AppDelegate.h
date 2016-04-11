@@ -11,11 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *rootNavi;
 
 @property (strong, nonatomic) UIImageView *adImageView;
-@property(nonatomic,strong) UIWebView *adWebView;
-@property (strong, nonatomic) UINavigationController *rootNavi;
 @property(nonatomic,strong) UIButton *timeButton;
-@property(nonatomic,strong) UILabel *timeLabel;
 @end
 
