@@ -7,9 +7,8 @@
 //
 
 #import "AlertDemoViewController.h"
-
+#import "CCWebViewController.h"
 @interface AlertDemoViewController ()
-@property(nonatomic,strong) UIWebView *webBlog;
 @end
 
 @implementation AlertDemoViewController
@@ -17,16 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"江湖";
-    self.webBlog = [[UIWebView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     NSString * path = @"http://www.policx.com";
+    [CCWebViewController showWithContro:self withUrlStr:path withTitle:@"江湖"];
     
-    NSURL *pdfURL = [NSURL URLWithString:path];
-    NSURLRequest *request = [NSURLRequest requestWithURL:pdfURL];
-    //设置缩放
-    [self.webBlog setScalesPageToFit:YES];
-    [self.webBlog loadRequest:request];
-    [self.view addSubview:_webBlog];
 }
 
 - (void)didReceiveMemoryWarning {

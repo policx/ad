@@ -15,6 +15,13 @@
 		E873B20D1CB60AA900C764CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E873B20B1CB60AA900C764CF /* LaunchScreen.storyboard */; };
 		E873B2161CB60B3B00C764CF /* AlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E873B2151CB60B3B00C764CF /* AlertDemoViewController.m */; };
 		E873B21D1CB60EA000C764CF /* 太阳.png in Resources */ = {isa = PBXBuildFile; fileRef = E873B21C1CB60EA000C764CF /* 太阳.png */; };
+		E8DCD28C1CBC9E62006509E7 /* cc_webview_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E8DCD27F1CBC9E62006509E7 /* cc_webview_back.png */; };
+		E8DCD28D1CBC9E62006509E7 /* cc_webview_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E8DCD2801CBC9E62006509E7 /* cc_webview_menu.png */; };
+		E8DCD28E1CBC9E62006509E7 /* CCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DCD2821CBC9E62006509E7 /* CCWebViewController.m */; };
+		E8DCD28F1CBC9E62006509E7 /* CircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DCD2851CBC9E62006509E7 /* CircleAnimationView.m */; };
+		E8DCD2901CBC9E62006509E7 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DCD2871CBC9E62006509E7 /* CircleView.m */; };
+		E8DCD2911CBC9E62006509E7 /* CountLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DCD2891CBC9E62006509E7 /* CountLabel.m */; };
+		E8DCD2921CBC9E62006509E7 /* PoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DCD28B1CBC9E62006509E7 /* PoAd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,18 @@
 		E873B2141CB60B3B00C764CF /* AlertDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertDemoViewController.h; sourceTree = "<group>"; };
 		E873B2151CB60B3B00C764CF /* AlertDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertDemoViewController.m; sourceTree = "<group>"; };
 		E873B21C1CB60EA000C764CF /* 太阳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太阳.png"; sourceTree = "<group>"; };
+		E8DCD27F1CBC9E62006509E7 /* cc_webview_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc_webview_back.png; sourceTree = "<group>"; };
+		E8DCD2801CBC9E62006509E7 /* cc_webview_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc_webview_menu.png; sourceTree = "<group>"; };
+		E8DCD2811CBC9E62006509E7 /* CCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWebViewController.h; sourceTree = "<group>"; };
+		E8DCD2821CBC9E62006509E7 /* CCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWebViewController.m; sourceTree = "<group>"; };
+		E8DCD2841CBC9E62006509E7 /* CircleAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimationView.h; sourceTree = "<group>"; };
+		E8DCD2851CBC9E62006509E7 /* CircleAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimationView.m; sourceTree = "<group>"; };
+		E8DCD2861CBC9E62006509E7 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		E8DCD2871CBC9E62006509E7 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		E8DCD2881CBC9E62006509E7 /* CountLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountLabel.h; sourceTree = "<group>"; };
+		E8DCD2891CBC9E62006509E7 /* CountLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountLabel.m; sourceTree = "<group>"; };
+		E8DCD28A1CBC9E62006509E7 /* PoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoAd.h; sourceTree = "<group>"; };
+		E8DCD28B1CBC9E62006509E7 /* PoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoAd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,7 @@
 		E873B1FC1CB60AA900C764CF /* ad */ = {
 			isa = PBXGroup;
 			children = (
+				E8DCD27E1CBC9E62006509E7 /* poAd */,
 				E873B2001CB60AA900C764CF /* AppDelegate.h */,
 				E873B2011CB60AA900C764CF /* AppDelegate.m */,
 				E873B2141CB60B3B00C764CF /* AlertDemoViewController.h */,
@@ -85,6 +105,33 @@
 				E873B1FE1CB60AA900C764CF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8DCD27E1CBC9E62006509E7 /* poAd */ = {
+			isa = PBXGroup;
+			children = (
+				E8DCD27F1CBC9E62006509E7 /* cc_webview_back.png */,
+				E8DCD2801CBC9E62006509E7 /* cc_webview_menu.png */,
+				E8DCD2811CBC9E62006509E7 /* CCWebViewController.h */,
+				E8DCD2821CBC9E62006509E7 /* CCWebViewController.m */,
+				E8DCD2831CBC9E62006509E7 /* Circle */,
+				E8DCD28A1CBC9E62006509E7 /* PoAd.h */,
+				E8DCD28B1CBC9E62006509E7 /* PoAd.m */,
+			);
+			path = poAd;
+			sourceTree = "<group>";
+		};
+		E8DCD2831CBC9E62006509E7 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				E8DCD2841CBC9E62006509E7 /* CircleAnimationView.h */,
+				E8DCD2851CBC9E62006509E7 /* CircleAnimationView.m */,
+				E8DCD2861CBC9E62006509E7 /* CircleView.h */,
+				E8DCD2871CBC9E62006509E7 /* CircleView.m */,
+				E8DCD2881CBC9E62006509E7 /* CountLabel.h */,
+				E8DCD2891CBC9E62006509E7 /* CountLabel.m */,
+			);
+			path = Circle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +194,9 @@
 			files = (
 				E873B21D1CB60EA000C764CF /* 太阳.png in Resources */,
 				E873B20D1CB60AA900C764CF /* LaunchScreen.storyboard in Resources */,
+				E8DCD28D1CBC9E62006509E7 /* cc_webview_menu.png in Resources */,
 				E873B20A1CB60AA900C764CF /* Assets.xcassets in Resources */,
+				E8DCD28C1CBC9E62006509E7 /* cc_webview_back.png in Resources */,
 				E873B2081CB60AA900C764CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,10 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DCD2911CBC9E62006509E7 /* CountLabel.m in Sources */,
+				E8DCD28E1CBC9E62006509E7 /* CCWebViewController.m in Sources */,
 				E873B2161CB60B3B00C764CF /* AlertDemoViewController.m in Sources */,
 				E873B2051CB60AA900C764CF /* ViewController.m in Sources */,
 				E873B2021CB60AA900C764CF /* AppDelegate.m in Sources */,
+				E8DCD2901CBC9E62006509E7 /* CircleView.m in Sources */,
+				E8DCD2921CBC9E62006509E7 /* PoAd.m in Sources */,
 				E873B1FF1CB60AA900C764CF /* main.m in Sources */,
+				E8DCD28F1CBC9E62006509E7 /* CircleAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
