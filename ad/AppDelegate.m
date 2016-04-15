@@ -6,6 +6,8 @@
 //  Copyright © 2016年 policx. All rights reserved.
 //
 
+#define webImageurlString @"http://cdn.duitang.com/uploads/item/201411/03/20141103131007_RQJLJ.thumb.700_0.jpeg"
+
 #import "AppDelegate.h"
 #import "AlertDemoViewController.h"
 #import "PoAd.h"
@@ -36,7 +38,7 @@
     
     // 启动广告
     PoAd *ad = [[PoAd alloc]init];
-    [ad initStartAd:self.rootNavi.view];
+    [ad initStartAd:self.rootNavi.view webimageStr:webImageurlString];
     
     return YES;
 }

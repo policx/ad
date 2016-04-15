@@ -13,7 +13,5 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *rootNavi;
 
-@property (strong, nonatomic) UIImageView *adImageView;
-@property(nonatomic,strong) UIButton *timeButton;
 @end
 

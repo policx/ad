@@ -7,26 +7,18 @@
 //
 
 #import "PoAd.h"
-
+#import "UIImageView+WebCache.h"
 @implementation PoAd
 
-- (void)initStartAd:(UIView *)adView{
+- (void)initStartAd:(UIView *)adView webimageStr:(NSString *)imageStr{
     self.adImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
-    [self.adImageView setImage:[UIImage imageNamed:@"太阳"]];
+    NSURL *url = [NSURL URLWithString:imageStr];
+    [self.adImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"太阳"]];
     [adView addSubview:self.adImageView];
     // 加载进度
     [self loadProgress];
 }
--(void)startAd {
-    // 广告图
-    self.adImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
-    [self.adImageView setImage:[UIImage imageNamed:@"太阳"]];
-    //[self addSubview:self.adImageView];
-    // 加载进度
-    [self loadProgress];
-    
-    // [self performSelector:@selector(removeAdImageView) withObject:nil afterDelay:3];
-}
+
 // 加载进度
 - (void)loadProgress {
     self.circleAniView = [[CircleAnimationView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width -70, 70, 35, 35)];
@@ -97,7 +89,6 @@
         self.adImageView.alpha = 0.f;
     } completion:^(BOOL finished) {
         [self.adImageView removeFromSuperview];
-        //self.window.rootViewController = self.rootNavi;
     }];
 }
 @end

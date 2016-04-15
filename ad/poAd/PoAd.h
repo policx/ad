@@ -13,6 +13,5 @@
 @property (nonatomic, strong)CircleAnimationView *circleAniView;
 @property (strong, nonatomic) UIImageView *adImageView;
 @property(nonatomic,strong) UIButton *timeButton;
-- (void)initStartAd:(UIView *)adView;
-- (void)startAd;
+- (void)initStartAd:(UIView *)adView webimageStr:(NSString *)imageStr;
 @end
