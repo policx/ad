@@ -13,7 +13,7 @@
 - (void)initStartAd:(UIView *)adView webimageStr:(NSString *)imageStr{
     self.adImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     NSURL *url = [NSURL URLWithString:imageStr];
-    [self.adImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"太阳"]];
+    [self.adImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"sun"]];
     [adView addSubview:self.adImageView];
     // 加载进度
     [self loadProgress];
